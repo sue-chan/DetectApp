@@ -25,7 +25,7 @@ SECRET_KEY = '@33n!1-jmgm5$p*=f-^0e^9my3up5l*02qu_i22!8lq%r#1x#('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'localhost-nemunemu-ya-1.paiza-user.cloud']
 
 
 # Application definition
