@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+    <head>
+        <title>あの子に似てるAV女優</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">あの子に似てるAV女優</a></h1>
+        </div>
+
+        <br>
+        <form action="{% url 'index' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" name="submit" value="女優を検索する">
+        </form>
+        {% for p in photos %}
+            <div>
+                <image src="{{ p.image.url }}" />
+            </div>
+        {% endfor %}
+    </body>
+</html>
