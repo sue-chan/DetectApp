@@ -4,6 +4,8 @@ from .models import Photo
 from . import detect_and_search
 from mysite import settings
 
+base_url = "https://avdetect.herokuapp.com"
+
 # Create your views here.
 def index(request):
     if request.method == "GET":
@@ -18,12 +20,12 @@ def index(request):
         photo = Photo()
         photo.image = form.cleaned_data["image"]
         photo.save()
-        url = settings.BASE_DIR + photo.image.url
-        return HttpResponse(url)
-        # name, image_url, link = detect_and_search.main(url)
-        # params = {
-        #     'name': name,
-        #     'image_url': image_url,
-        #     'link': link
-        # }
-        # return render(request, 'detect/result.html', params)
+        url = base_url+ photo.image.url
+        name, image_url, link = detect_and_search.main(url)
+        params = {
+            'name': name,
+            'image_url': image_url,
+            'link': link
+        }
+        photo.delete()
+        return render(request, 'detect/result.html', params)
