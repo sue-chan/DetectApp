@@ -2,23 +2,24 @@
 <html>
     <head>
         <title>あの子に似てるAV女優</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/detect.css' %}">
     </head>
     <body>
         <div>
-            <h1><a href="/">あの子に似てるAV女優</a></h1>
+            <h1><a href="/">あの子に似てる<span style="color:#e966fe";>AV</span>女優</a></h1>
         </div>
-        {{ name }}
+        <span class="name">{{ name }}</span>
         <br>
-        <img src="{{ image_url }}">
+        <img class="pic" src="{{ image_url }}">
         <br>
-        <a href="{{ link }}">この子の動画はこちら</a>
+        <a class="link" href="{{ link }}">この子の動画はこちら</a>
         <br>
         <br>
         <form action="{% url 'index' %}" method="get">
-            <input type="submit" name="submit" value="戻る">
+            <div class="back">
+                <input class="button" type="submit" name="submit" value="戻る">
+            </div>
         </form>
     </body>
 </html>

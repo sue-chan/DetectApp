@@ -1,3 +1,69 @@
 body {
-    padding-left: 15px;
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e966fe;
+}
+
+a:active {
+    color:#e966fe;
+} 
+
+.name {
+    font-size: 25px;
+    color: #3b3b3b;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 2.2;
+    color: #000000;
+}
+
+.pic{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.picture{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.link{
+    font-size: 20px;
+    
+}
+
+.back{
+    padding-top: 30px;
+}
+
+.button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ff4da6;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 5px 5px 6px #666666;  /* 影の設定 */
+  border        : 2px solid #ff4da6;    /* 枠の指定 */
+}
+
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff4da6;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }

@@ -2,25 +2,24 @@
 <html>
     <head>
         <title>あの子に似てるAV女優</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/detect.css' %}">
     </head>
     <body>
         <div>
-            <h1><a href="/">あの子に似てるAV女優</a></h1>
+            <h1><a href="/">あの子に似てる<span style="color:#e966fe";>AV</span>女優</a></h1>
         </div>
 
-        <br>
+    
         <form action="{% url 'index' %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
+            <div class="picture">
             {{ form }}
-            <input type="submit" name="submit" value="女優を検索する">
-        </form>
-        {% for p in photos %}
-            <div>
-                <image src="{{ p.image.url }}" />
             </div>
-        {% endfor %}
+            <br>
+            <div>
+            <input class="button" type="submit" name="submit" value="女優を検索">
+            </div>
+        </form>
     </body>
 </html>
