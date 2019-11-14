@@ -1,8 +1,7 @@
-import requests
 import json
 import logging
 import pandas as pd
-
+import requests
 
 
 BASE_URL = "https://av.cognitiveservices.azure.com/face/v1.0/"
