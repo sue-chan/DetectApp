@@ -5,6 +5,7 @@ body {
 
 a {
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -23,7 +24,6 @@ a:active {
 h1 {
     font-size: 40px;
     line-height: 2.2;
-    color: #000000;
 }
 
 .pic{
@@ -45,6 +45,10 @@ h1 {
 
 .back{
     padding-top: 30px;
+}
+
+.text{
+    padding-top: 70px;
 }
 
 .button {

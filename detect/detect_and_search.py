@@ -4,8 +4,8 @@ import pandas as pd
 import requests
 
 
-BASE_URL = "https://av.cognitiveservices.azure.com/face/v1.0/"
-SUBSCRIPTION_KEY  = "6df1df5e892642bbacd897ca656ff5b7"
+BASE_URL = "https://detectapp.cognitiveservices.azure.com/face/v1.0/"
+SUBSCRIPTION_KEY  = "ffd3975f4c8b412eb36d2974aec21ea7"
 GROUP_NAME = "avactress"
 DMM_AFFILIATE_ID = "sueblocom999-999"
 DMM_API_ID = "dAecCaaPMFrXcnTgXhG7"
